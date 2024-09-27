@@ -12,16 +12,19 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<header>
+	<body
+	class="p-0 m-0 bg-[rgb(192,189,189)]">
+		<header
+		class="pt-[10px] h-20 bg-[#ffe600]">
 			<div class="top-header container">
-				<img
+				<img class="w-[120px]"
 					src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png"
 					alt=""
 				/>
-				<div class="input">
-					<input placeholder="Busca lo que deseas aqui" />
-					<button
+				<div class="flex items-center">
+					<input placeholder="Busca lo que deseas aqui" 
+					class="box-border inline-block w-[80%] h-9 py-[10px] px-2 rounded-tl-[3px] rounded-bl-[3px] border-none outline-none" />
+					<button class="inline h-9 w-8 border-none bg-white rounded-tr-[3px] rounded-br-[3px]"
 						><svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -88,47 +91,47 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style>
-	html,
-	body {
+	/* html, */
+	/* body {
 		padding: 0;
 		margin: 0;
 		background-color: rgb(192, 189, 189);
-	}
-	header {
+	} */
+	/* header {
 		padding-top: 10px;
 		height: 80px;
 		background-color: #ffe600;
-	}
-	header img {
+	} */
+	/* header img {
 		width: 120px;
-	}
+	} */
 
-	header input {
-		box-sizing: border-box;
-		display: inline-block;
-		width: 80%;
-		height: 35px;
-		padding: 10px 8px;
-		border-top-left-radius: 3px;
-		border-bottom-left-radius: 3px;
-		border: none;
+	/* header input { */
+		/* box-sizing: border-box; */
+		/* display: inline-block; */
+		/* width: 80%; */
+		/* height: 35px; */
+		/* padding: 10px 8px; */
+		/* border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px; */
+		/* border: none; */
 		/* border: 1px solid white; */
-		outline: none;
-	}
+		/* outline: none; */
+	/* } */
 
-	header button {
-		display: inline;
-		height: 35px;
-		width: 32px;
-		border: none;
-		background-color: #fff;
-		border-top-right-radius: 3px;
+	/* header button {
+		/* display: inline; */
+		/* height: 35px;
+		width: 32px; */
+		/* border: none;
+		background-color: #fff; */
+		/* border-top-right-radius: 3px;
 		border-bottom-right-radius: 3px;
-	}
-	.input {
+	} */
+	/* .input {
 		display: flex;
-		align- : center;
-	}
+		align-items: center;
+	} */
 	/* .banner {
 		height: 280px;
 		background: linear-gradient(
